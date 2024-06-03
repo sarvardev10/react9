@@ -1,4 +1,8 @@
-import { AppstoreOutlined } from "@ant-design/icons";
+import {
+  HomeOutlined,
+  InfoCircleOutlined,
+  ContactsOutlined,
+} from "@ant-design/icons";
 import Albom from ".";
 
 export const albomRoute = [
@@ -6,7 +10,9 @@ export const albomRoute = [
     key: "/albom",
     Element: Albom,
     label: "Albom",
-    icon: AppstoreOutlined,
+    icon: HomeOutlined,
+    InfoCircleOutlined,
+    ContactsOutlined,
     children: [],
     visible: true,
     access: "main",
