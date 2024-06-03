@@ -12,11 +12,11 @@ export const useBaseLayoutProps = () => {
 
   const items = [
     {
-      label: "Мой профиль",
+      label: "Sarvarbek",
       key: "0",
     },
     {
-      label: "Настройки",
+      label: "Usmonov",
       key: "1",
     },
     {
@@ -24,7 +24,7 @@ export const useBaseLayoutProps = () => {
       key: "2",
     },
     {
-      label: "Logout",
+      label: "N55",
       key: "3",
     },
   ];
