@@ -59,7 +59,7 @@ export const BaseLayout = hoc(
                 collapsed ? "text-[0px]" : "text-[25px]"
               }`}
             >
-              Links
+              API
             </h1>
             {/* <img
                             src={''}
@@ -93,9 +93,9 @@ export const BaseLayout = hoc(
             <div>
               <Dropdown menu={{ items }} trigger={["click"]}>
                 <div className="flex items-center gap-2 cursor-pointer">
-                  <h1 className="text-[17px] cursor-pointer">User</h1>
+                  <h1 className="text-[17px] cursor-pointer">User:</h1>
                   <Avatar size={"default"} style={{ backgroundColor: "black" }}>
-                    S
+                    A
                   </Avatar>
                 </div>
               </Dropdown>

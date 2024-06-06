@@ -1,14 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Table } from "antd";
+import { request } from "../../utils/request";
 
-const Albom = () => {
+const columns = [
+  {
+    title: "UserId",
+    dataIndex: "userId",
+    key: "userId",
+  },
+  {
+    title: "Id",
+    dataIndex: "id",
+    key: "id",
+  },
+  {
+    title: "Title",
+    dataIndex: "title",
+    key: "title",
+  },
+];
+const Albums = () => {
+  const [values, setValues] = useState([]);
+  console.log(values);
+  const getUsers = async () => {
+    try {
+      const { data } = await request("albums");
+      setValues(data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    getUsers();
+  }, []);
   return (
     <div>
-      Albom Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-      dolorem commodi recusandae esse dolores voluptatum eum non ex harum
-      officiis, alias accusantium nobis veniam quod facilis aut quae aliquam
-      cumque?
+      <Table columns={columns} dataSource={values || []} />
     </div>
   );
 };
 
-export default Albom;
+export default Albums;

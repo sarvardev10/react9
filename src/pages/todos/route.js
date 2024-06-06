@@ -1,9 +1,4 @@
-import {
-  HomeOutlined,
-  InfoCircleOutlined,
-  ContactsOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
+import { CheckCircleFilled } from "@ant-design/icons";
 import Todos from ".";
 
 export const todosRoute = [
@@ -11,10 +6,7 @@ export const todosRoute = [
     key: "/todos",
     Element: Todos,
     label: "Todos",
-    icon: HomeOutlined,
-    InfoCircleOutlined,
-    ContactsOutlined,
-    UserOutlined,
+    icon: CheckCircleFilled,
     children: [],
     visible: true,
     access: "main",
