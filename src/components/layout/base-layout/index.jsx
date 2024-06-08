@@ -95,7 +95,7 @@ export const BaseLayout = hoc(
                 <div className="flex items-center gap-2 cursor-pointer">
                   <h1 className="text-[17px] cursor-pointer">User:</h1>
                   <Avatar size={"default"} style={{ backgroundColor: "black" }}>
-                    A
+                    S
                   </Avatar>
                 </div>
               </Dropdown>
